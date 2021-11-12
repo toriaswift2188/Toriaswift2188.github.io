@@ -1,138 +1,149 @@
 /* Background*/
-body{
-    background-image: url("background.jpg");
-    background-size: cover;
-}
-
-
 /* Master Styles*/
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 /* Nav Styles*/
 .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 .left-side {
-    display: flex;
+  display: flex;
 }
 .nav-wrapper > .left-side > div {
-    font-size: 1em;
-    margin-right: 20px;
-    font-weight: 500;
+  font-size: 1em;
+  margin-right: 20px;
+  font-weight: 700;
 }
 .nav-wrapper > .right-side > div {
-    text-transform: uppercase;
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-    font-weight: 500;
-    color: black;
+  text-transform: uppercase;
+  height: 22px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  font-weight: 700;
+  color: white;
 }
 .nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-    font-weight: 500;
-    color: black;
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  font-weight: 700;
+  color: white;
 }
 .nav-link-wrapper a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.5s;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.5s;
 }
 .nav-link-wrapper:hover {
-    border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid white;
 }
 .nav-link-wrapper a:hover {
-    color:black;
+  color: white;
+}
+.active-nav-link {
+  border-bottom: 1px solid whitesmoke;
+}
+.active-nav-link a {
+  color: whitesmoke !important;
 }
 /*Portfolio Styles*/
 .portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .portfolio-item-wrapper {
-    position: relative;
+  position: relative;
 }
 .portfolio-img-background {
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20%;
 }
 .img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10%;
+  border-spacing: 2em;
 }
 .logo-wrapper img {
-   width: 50%;
-   margin-top: 20%;
-   margin-bottom: 10%;
+  width: 60%;
+  margin-top: 20%;
 }
 /* Project specs, hover, description */
 .img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 500;
-    color: transparent;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500; ;
+  transition: 1s;
+  font-weight: 700;
+  color: transparent;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 .img-text-wrapper:hover .subtitle {
-
-    font-size: 1em;
-    color: whitesmoke; 
+  font-size: 1em;
+  color: whitesmoke;
 }
 .img-darken {
-    transition: 1s;
-    filter: brightness(10%);
+  transition: 1s;
+  filter: brightness(10%);
 }
 /* About Page Styles */
 
 .two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.profile-image-wrapper img {
-    width: 20%;
+.profile-image-wrapper {
+  width: 20%;
 }
-
 .profile-content-wrapper {
-    padding: 30px;
-    color: #353535;
+  padding: 30px;
+  color: #353535;
 }
 
 .profile-content-wrapper h1 {
-    color: #353535;
-}
-.footer {
-    color: #353535;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    align-items: center;
-    text-transform: uppercase;
-    width: 0.4em;
-    height:.4em;
+  color: whitesmoke;
 }
 .profile-content-wrapper {
-    color:#353535;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+/*Footer Styles*/
+
+.footer-content-right {
+  padding-right: 10px;
+  margin-top: 20px;
+  float: right;
+}
+
+.icon-style {
+  width: 30px;
+  height: 30px;
+  border: 4px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.icon-style:hover {
+  background-color: transparent;
+  padding: 2px;
 }
