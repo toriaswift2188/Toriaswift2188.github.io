@@ -1,5 +1,18 @@
 /* Background*/
+
 /* Master Styles*/
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: whitesmoke;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -119,13 +132,10 @@
 }
 
 .profile-content-wrapper h1 {
-  color: whitesmoke;
-}
-.profile-content-wrapper {
-  color: whitesmoke;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  color: whitesmoke;
 }
 /*Footer Styles*/
 
