@@ -12,64 +12,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-    body {
-        background-image: url(home-background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-</style>
-
 <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html"> Home </a>
-                </div>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html"> Home </a>
+                    </div>
 
-                <div class="nav-link-wrapper nav-link-active">
-                    <a href="about.html"> About </a>
+                    <div class="nav-link-wrapper nav-link-active">
+                        <a href="about.html"> About </a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="brand">
+                        <div>VICTORIA SWIFT</div>
+                    </div>
                 </div>
             </div>
-            <div class="right-side">
-                <div class="brand">
-                    <div>VICTORIA SWIFT</div>
+            <div class="content-wrapper">
+                <div class="two-column-wrapper">
+                    <div class="profile-image-wrapper">
+                        <img src="profile.png">
+                    </div>
+                    <div class="profile-content-wrapper">
+                        <h1>Hello, my name is Victoria.</h1>
+                        <p>I am a freelance Front-End Web Developer who is focused on creating functional websites,
+                            are accessible to all. I help businesses turn their ideas into reality on the World Wide Web.
+                        </p>
+                        <p>Since I firmly believe the key to success is through continuous improvement, most of my spare time is spent learning new web development tools and techniques. Currently, I am enrolled in MIT’s Professional Certificate in Full Stack Development using MERN. 
+                        </p>
+                        <p>Feel free to check out some of check out some of my most recent projects from the course <a href="index.html">here!</a></p>
+                        
+                        <h2>Thanks for stopping by!</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="profile.png">
-                </div>
-                <div class="profile-content-wrapper">
-                    <h1>Hello, my name is Victoria.</h1>
-                    <p>I am a freelance Front-End Web Developer who is focused on functionality and creating websites that
-                        are accessible to all. I help businesses turn their ideas into reality on the World Wide Web.
-                    </p>
-                    <p>Since I firmly believe the key to success is through continuous improvement, most of my spare time is spent learning new web development tools and techniques. Currently, I am enrolled in MIT’s Professional Certificate in Full Stack Development using MERN. 
-                    </p>
-                    <p>Feel free to check out some of check out some of my most recent projects from the course <a href="index.html">here!</a></p>
-                    
-                    </h2>Thanks for stopping by!</h2>
-                </div>
-            </div>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
         </div>
 
-            </div>
+        <div class="footer-content-right">
+            <a href="https://github.com/toriaswift2188"><img src="github-icon.png" class="icon-style"
+                    alt="Github icon"></a>
+            <a href="https://www.linkedin.com/in/vswift"><img src="linkedin-icon.png" class="icon-style"
+                    alt="Linkedin icon"></a>
+            <a href="mailto:vswift227@gmail.com"><img src="linkedin-icon.png" class="icon-style"
+                    alt="Email icon"></a>
         </div>
     </div>
-
-    <div class="footer-content-right">
-        <a href="https://github.com/toriaswift2188"><img src="github-icon.png" class="icon-style"
-                alt="Github icon"></a>
-        <a href="https://www.linkedin.com/in/vswift"><img src="linkedin-icon.png" class="icon-style"
-                alt="Linkedin icon"></a>
-        <a href="mailto:vswift227@gmail.com"><img src="email-icon.png" class="icon-style"
-                alt="Email icon"></a>
-    </div>
-
 </body>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
 
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+if (video.paused) {
+video.play();
+btn.innerHTML = "Pause";
+} else {
+video.pause();
+btn.innerHTML = "Play";
+}
+}
+</script>
 </html>
